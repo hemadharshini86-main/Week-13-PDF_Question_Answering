@@ -1,0 +1,229 @@
+query,rank,chunk_id,similarity_score,content
+What is machine learning?,1,1,0.2609,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+What is machine learning?,2,16,0.1844,"Why the log matters
+Six months on, writing the paper, you will not
+remember which of forty runs used which
+settings. The log is the difference between a
+reproducible result and a story.
+Frame the question and decide in advance what result would be
+meaningful.
+Build the dumbest baseline that could work. Record it.
+Improve one thing at a time, and keep a log of what you tried and what
+happened.
+Test once, at the end. Report honestly, including what failed."
+What is machine learning?,3,17,0.164,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+What is machine learning?,4,2,0.1395,"Who made this, and why it is free
+Fulcrum is a volunteer-run non-profit. We help people from under-resourced regions
+learn artificial intelligence through one-on-one mentorship, research and publication
+supervision, project support, workshops, and a guest speaker series.
+The premise is simple. Ability is spread evenly across the world; opportunity is not. What
+separates a capable student in Pokhara or rural Bihar from one at a well-funded lab is"
+What is machine learning?,5,4,0.0731,"Discord
+discord.gg/gbQCGkupdJ
+LinkedIn
+linkedin.com/company/gofulcrum
+Every deck we publish is free to download at
+fulcrumgo.github.io/resources
+F U L C R U M ML Foundations 2 / 14PART ONE
+Learning means fitting a function
+you did not write
+Every model in this deck is a family of functions plus a rule for picking one.
+F U L C R U M ML Foundations 3 / 14The three ingredients
+Worth internalising
+When you meet an unfamiliar method, ask those
+three questions. Papers that seem impenetrable"
+What are supervised and unsupervised learning?,1,6,0.2588,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+What are supervised and unsupervised learning?,2,16,0.1672,"Why the log matters
+Six months on, writing the paper, you will not
+remember which of forty runs used which
+settings. The log is the difference between a
+reproducible result and a story.
+Frame the question and decide in advance what result would be
+meaningful.
+Build the dumbest baseline that could work. Record it.
+Improve one thing at a time, and keep a log of what you tried and what
+happened.
+Test once, at the end. Report honestly, including what failed."
+What are supervised and unsupervised learning?,3,1,0.1562,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+What are supervised and unsupervised learning?,4,17,0.135,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+What are supervised and unsupervised learning?,5,8,0.124,"Logistic regression passes that same linear score through a sigmoid to get a probability, and minimises cross-entropy.
+Both are interpretable: each weight says how the prediction moves as one feature moves.
+They are the correct baseline. A complex model that cannot beat logistic regression is telling you something.
+F U L C R U M ML Foundations 6 / 14Gradient descent
+Adam adapts a per-parameter step size and is a reasonable default. It is not magic; a badly scaled problem still trains badly."
+What is reinforcement learning?,1,6,0.1944,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+What is reinforcement learning?,2,16,0.1844,"Why the log matters
+Six months on, writing the paper, you will not
+remember which of forty runs used which
+settings. The log is the difference between a
+reproducible result and a story.
+Frame the question and decide in advance what result would be
+meaningful.
+Build the dumbest baseline that could work. Record it.
+Improve one thing at a time, and keep a log of what you tried and what
+happened.
+Test once, at the end. Report honestly, including what failed."
+What is reinforcement learning?,3,17,0.164,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+What is reinforcement learning?,4,2,0.1395,"Who made this, and why it is free
+Fulcrum is a volunteer-run non-profit. We help people from under-resourced regions
+learn artificial intelligence through one-on-one mentorship, research and publication
+supervision, project support, workshops, and a guest speaker series.
+The premise is simple. Ability is spread evenly across the world; opportunity is not. What
+separates a capable student in Pokhara or rural Bihar from one at a well-funded lab is"
+What is reinforcement learning?,5,1,0.0934,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+What is linear regression?,1,7,0.2627,"the literature suggests.
+Self-supervised sits between the first two: labels invented from the data's own structure.
+F U L C R U M ML Foundations 5 / 14Linear and logistic regression
+Start here, and keep coming back here.
+In applied work, a linear model with good features very often beats a neural network with bad ones.
+Linear regression fits y = w·x + b  by minimising squared error. It has a closed-form solution."
+What is linear regression?,2,8,0.2194,"Logistic regression passes that same linear score through a sigmoid to get a probability, and minimises cross-entropy.
+Both are interpretable: each weight says how the prediction moves as one feature moves.
+They are the correct baseline. A complex model that cannot beat logistic regression is telling you something.
+F U L C R U M ML Foundations 6 / 14Gradient descent
+Adam adapts a per-parameter step size and is a reasonable default. It is not magic; a badly scaled problem still trains badly."
+What is linear regression?,3,16,0.1938,"Why the log matters
+Six months on, writing the paper, you will not
+remember which of forty runs used which
+settings. The log is the difference between a
+reproducible result and a story.
+Frame the question and decide in advance what result would be
+meaningful.
+Build the dumbest baseline that could work. Record it.
+Improve one thing at a time, and keep a log of what you tried and what
+happened.
+Test once, at the end. Report honestly, including what failed."
+What is linear regression?,4,2,0.1466,"Who made this, and why it is free
+Fulcrum is a volunteer-run non-profit. We help people from under-resourced regions
+learn artificial intelligence through one-on-one mentorship, research and publication
+supervision, project support, workshops, and a guest speaker series.
+The premise is simple. Ability is spread evenly across the world; opportunity is not. What
+separates a capable student in Pokhara or rural Bihar from one at a well-funded lab is"
+What is linear regression?,5,17,0.126,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+How can we evaluate a machine learning model?,1,1,0.2497,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+How can we evaluate a machine learning model?,2,4,0.0874,"Discord
+discord.gg/gbQCGkupdJ
+LinkedIn
+linkedin.com/company/gofulcrum
+Every deck we publish is free to download at
+fulcrumgo.github.io/resources
+F U L C R U M ML Foundations 2 / 14PART ONE
+Learning means fitting a function
+you did not write
+Every model in this deck is a family of functions plus a rule for picking one.
+F U L C R U M ML Foundations 3 / 14The three ingredients
+Worth internalising
+When you meet an unfamiliar method, ask those
+three questions. Papers that seem impenetrable"
+How can we evaluate a machine learning model?,3,17,0.0664,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+How can we evaluate a machine learning model?,4,3,0.0582,"rarely intelligence. It is access to supervision, to reviewers, to equipment, and to the
+unwritten rules nobody writes down.
+This deck is part of how we try to close that. It is free, it will stay free, and you may reuse
+and adapt it for your own teaching under CC BY 4.0. If it is useful to you, come and find
+us.
+Find us
+Website
+fulcrumgo.github.io
+More material
+fulcrumgo.github.io/resources
+Discord
+discord.gg/gbQCGkupdJ
+LinkedIn
+linkedin.com/company/gofulcrum"
+How can we evaluate a machine learning model?,5,5,0.0575,"three questions. Papers that seem impenetrable
+usually become simple once you identify the
+family, the loss and the optimiser.
+A model family, the shape of function you will allow (a line, a tree, a
+network).
+A loss function, a number saying how wrong a given function is on your
+data.
+An optimiser, a procedure for reducing that number by adjusting
+parameters.
+Change any one and you get a different algorithm. That is genuinely most
+of the field."

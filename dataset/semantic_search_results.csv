@@ -1,0 +1,208 @@
+query,rank,chunk_id,similarity_score,content
+What is machine learning?,1,1,0.6179,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+What is machine learning?,2,6,0.4851,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+What is machine learning?,3,7,0.4218,"the literature suggests.
+Self-supervised sits between the first two: labels invented from the data's own structure.
+F U L C R U M ML Foundations 5 / 14Linear and logistic regression
+Start here, and keep coming back here.
+In applied work, a linear model with good features very often beats a neural network with bad ones.
+Linear regression fits y = w·x + b  by minimising squared error. It has a closed-form solution."
+What is machine learning?,4,12,0.4118,"F U L C R U M ML Foundations 9 / 14Trees and ensembles
+If your data is a spreadsheet, start with gradient boosting. Reaching straight for a neural network is a common and expensive mistake.
+A decision tree splits on features recursively. Highly interpretable, and prone to overfitting alone.
+Random forests average many trees trained on bootstrap samples with random feature subsets, cutting variance.
+Gradient boosting (XGBoost, LightGBM) fits each new tree to the previous ensemble's errors."
+What is machine learning?,5,17,0.339,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+What are supervised and unsupervised learning?,1,6,0.594,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+What are supervised and unsupervised learning?,2,7,0.4465,"the literature suggests.
+Self-supervised sits between the first two: labels invented from the data's own structure.
+F U L C R U M ML Foundations 5 / 14Linear and logistic regression
+Start here, and keep coming back here.
+In applied work, a linear model with good features very often beats a neural network with bad ones.
+Linear regression fits y = w·x + b  by minimising squared error. It has a closed-form solution."
+What are supervised and unsupervised learning?,3,1,0.4004,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+What are supervised and unsupervised learning?,4,12,0.305,"F U L C R U M ML Foundations 9 / 14Trees and ensembles
+If your data is a spreadsheet, start with gradient boosting. Reaching straight for a neural network is a common and expensive mistake.
+A decision tree splits on features recursively. Highly interpretable, and prone to overfitting alone.
+Random forests average many trees trained on bootstrap samples with random feature subsets, cutting variance.
+Gradient boosting (XGBoost, LightGBM) fits each new tree to the previous ensemble's errors."
+What are supervised and unsupervised learning?,5,4,0.2952,"Discord
+discord.gg/gbQCGkupdJ
+LinkedIn
+linkedin.com/company/gofulcrum
+Every deck we publish is free to download at
+fulcrumgo.github.io/resources
+F U L C R U M ML Foundations 2 / 14PART ONE
+Learning means fitting a function
+you did not write
+Every model in this deck is a family of functions plus a rule for picking one.
+F U L C R U M ML Foundations 3 / 14The three ingredients
+Worth internalising
+When you meet an unfamiliar method, ask those
+three questions. Papers that seem impenetrable"
+What is reinforcement learning?,1,6,0.5606,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+What is reinforcement learning?,2,1,0.3778,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+What is reinforcement learning?,3,4,0.2948,"Discord
+discord.gg/gbQCGkupdJ
+LinkedIn
+linkedin.com/company/gofulcrum
+Every deck we publish is free to download at
+fulcrumgo.github.io/resources
+F U L C R U M ML Foundations 2 / 14PART ONE
+Learning means fitting a function
+you did not write
+Every model in this deck is a family of functions plus a rule for picking one.
+F U L C R U M ML Foundations 3 / 14The three ingredients
+Worth internalising
+When you meet an unfamiliar method, ask those
+three questions. Papers that seem impenetrable"
+What is reinforcement learning?,4,17,0.2708,"happened.
+Test once, at the end. Report honestly, including what failed.
+F U L C R U M ML Foundations 13 / 14ABOUT FULCRUM
+Next: Deep Learning, Foundations
+Neural networks, backpropagation, and what actually changes when you stack layers.
+Fulcrum is a volunteer-run non-profit helping people from under-resourced regions learn AI through free
+mentorship, research supervision, and open material like this deck. Founded 2025 in Kathmandu, Nepal. Nothing
+we do costs anything.
+Website"
+What is reinforcement learning?,5,3,0.2614,"rarely intelligence. It is access to supervision, to reviewers, to equipment, and to the
+unwritten rules nobody writes down.
+This deck is part of how we try to close that. It is free, it will stay free, and you may reuse
+and adapt it for your own teaching under CC BY 4.0. If it is useful to you, come and find
+us.
+Find us
+Website
+fulcrumgo.github.io
+More material
+fulcrumgo.github.io/resources
+Discord
+discord.gg/gbQCGkupdJ
+LinkedIn
+linkedin.com/company/gofulcrum"
+What is linear regression?,1,7,0.327,"the literature suggests.
+Self-supervised sits between the first two: labels invented from the data's own structure.
+F U L C R U M ML Foundations 5 / 14Linear and logistic regression
+Start here, and keep coming back here.
+In applied work, a linear model with good features very often beats a neural network with bad ones.
+Linear regression fits y = w·x + b  by minimising squared error. It has a closed-form solution."
+What is linear regression?,2,11,0.2635,"diagnostic. Watch it every run.
+More data reduces variance. It does not fix bias.
+F U L C R U M ML Foundations 8 / 14Regularisation
+L2 (ridge) penalises large weights, spreading influence across features.
+L1 (lasso) drives some weights to exactly zero, performing feature selection as it fits.
+Early stopping halts training when validation loss turns upward.
+Dropout randomly disables units during training, preventing over-reliance on any single path."
+What is linear regression?,3,5,0.2528,"three questions. Papers that seem impenetrable
+usually become simple once you identify the
+family, the loss and the optimiser.
+A model family, the shape of function you will allow (a line, a tree, a
+network).
+A loss function, a number saying how wrong a given function is on your
+data.
+An optimiser, a procedure for reducing that number by adjusting
+parameters.
+Change any one and you get a different algorithm. That is genuinely most
+of the field."
+What is linear regression?,4,6,0.2404,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+What is linear regression?,5,1,0.2262,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+How can we evaluate a machine learning model?,1,1,0.4327,"FULCRUM COURSE NOTES · 03
+Machine Learning: Foundations
+What it means for a machine to learn from data, the handful of ideas that recur
+everywhere, and how to tell a real result from a flattering one.
+F U L C R U M
+Utsav Poudel
+Founder, Fulcrum
+Original material © Fulcrum. Released free for study and teaching under CC BY 4.0, reuse and adapt it, but keep the attribution.
+Named papers and models are cited so you can go to the primary source.ABOUT FULCRUM
+Who made this, and why it is free"
+How can we evaluate a machine learning model?,2,6,0.3826,"of the field.
+F U L C R U M ML Foundations 4 / 14Supervised, unsupervised, reinforcement
+Supervised. You have inputs and correct outputs. Classification and regression live here, and so does most deployed ML.
+Unsupervised, inputs only. Clustering, dimensionality reduction, density estimation.
+Reinforcement, an agent acts, receives reward, and learns a policy. Powerful, sample-hungry, and harder to get working than
+the literature suggests."
+How can we evaluate a machine learning model?,3,13,0.3759,"On tabular data, boosted trees remain extremely hard to beat, including by deep learning.
+F U L C R U M ML Foundations 10 / 14Evaluation that will survive a reviewer
+Cross-validation gives a variance estimate, not just a point score. Report the spread.
+Precision, recall, F1 for imbalanced problems; state which error type actually matters in your setting.
+ROC-AUC summarises ranking quality across thresholds; PR-AUC is more informative under heavy imbalance."
+How can we evaluate a machine learning model?,4,12,0.3738,"F U L C R U M ML Foundations 9 / 14Trees and ensembles
+If your data is a spreadsheet, start with gradient boosting. Reaching straight for a neural network is a common and expensive mistake.
+A decision tree splits on features recursively. Highly interpretable, and prone to overfitting alone.
+Random forests average many trees trained on bootstrap samples with random feature subsets, cutting variance.
+Gradient boosting (XGBoost, LightGBM) fits each new tree to the previous ensemble's errors."
+How can we evaluate a machine learning model?,5,10,0.3285,"The most common student error
+Tuning hyperparameters against the test set,
+then reporting test performance. That number is
+now meaningless. Keep a set you look at
+exactly once.
+Underfitting (high bias), the model is too simple to capture the pattern.
+Poor on train and test alike.
+Overfitting (high variance), the model memorised the training set,
+including its noise. Excellent on train, poor on test.
+The gap between training and validation performance is your main
+diagnostic. Watch it every run."
